@@ -1,0 +1,621 @@
+/* ==========================================
+        VERSEMC ANIMATIONS
+========================================== */
+
+/* Fade In */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Fade Up */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+/* Fade Down */
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-down{
+
+    animation:fadeDown .9s ease forwards;
+
+}
+
+/* Fade Left */
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-left{
+
+    animation:fadeLeft .9s ease forwards;
+
+}
+
+/* Fade Right */
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-right{
+
+    animation:fadeRight .9s ease forwards;
+
+}
+
+/* Floating Animation */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* Slow Floating */
+
+@keyframes floatSlow{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.float-slow{
+
+    animation:floatSlow 8s ease-in-out infinite;
+
+}
+
+/* Glow Pulse */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 10px #7C3AED;
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 25px #7C3AED,
+        0 0 60px #7C3AED;
+
+    }
+
+    100%{
+
+        box-shadow:0 0 10px #7C3AED;
+
+    }
+
+}
+
+.glow{
+
+    animation:glow 2.5s infinite;
+
+}
+
+/* Text Glow */
+
+@keyframes textGlow{
+
+    0%{
+
+        text-shadow:0 0 10px #7C3AED;
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 20px #7C3AED,
+        0 0 45px #00E5FF;
+
+    }
+
+    100%{
+
+        text-shadow:0 0 10px #7C3AED;
+
+    }
+
+}
+
+.glow-text{
+
+    animation:textGlow 2.5s infinite;
+
+}
+
+/* Scale */
+
+@keyframes scale{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.scale{
+
+    animation:scale 3s infinite;
+
+}
+
+/* Rotate */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.rotate{
+
+    animation:rotate 15s linear infinite;
+
+}
+
+/* Shine */
+
+@keyframes shine{
+
+    0%{
+
+        left:-100%;
+
+    }
+
+    100%{
+
+        left:120%;
+
+    }
+
+}
+
+.shine{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shine::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:40%;
+
+    height:100%;
+
+    transform:skewX(-20deg);
+
+    background:linear-gradient(
+
+        transparent,
+
+        rgba(255,255,255,.6),
+
+        transparent
+
+    );
+
+    animation:shine 3.5s infinite;
+
+}
+
+/* Card Hover */
+
+.card-hover{
+
+    transition:.35s;
+
+}
+
+.card-hover:hover{
+
+    transform:
+
+    translateY(-10px)
+
+    scale(1.03);
+
+}
+
+/* Button Hover */
+
+.btn-hover{
+
+    transition:.35s;
+
+}
+
+.btn-hover:hover{
+
+    transform:
+
+    translateY(-6px)
+
+    scale(1.05);
+
+}
+
+/* Neon Border */
+
+@keyframes borderGlow{
+
+    0%{
+
+        border-color:#7C3AED;
+
+    }
+
+    50%{
+
+        border-color:#00E5FF;
+
+    }
+
+    100%{
+
+        border-color:#7C3AED;
+
+    }
+
+}
+
+.border-glow{
+
+    animation:borderGlow 2s infinite;
+
+}
+
+/* Hero Background */
+
+@keyframes backgroundMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+.animate-background{
+
+    background-size:200% 200%;
+
+    animation:backgroundMove 15s linear infinite;
+
+}
+
+/* Page Entry */
+
+@keyframes pageLoad{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.98);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.page-load{
+
+    animation:pageLoad .8s ease;
+
+}
+
+/* Icon Bounce */
+
+@keyframes bounce{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    25%{
+
+        transform:translateY(-8px);
+
+    }
+
+    50%{
+
+        transform:translateY(0);
+
+    }
+
+    75%{
+
+        transform:translateY(-4px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.bounce{
+
+    animation:bounce 2s infinite;
+
+}
+
+/* Infinite Pulse */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:.85;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* Loading Spinner */
+
+@keyframes spinner{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.spinner{
+
+    animation:spinner 1s linear infinite;
+
+}
+
+/* Delays */
+
+.delay-1{
+
+    animation-delay:.2s;
+
+}
+
+.delay-2{
+
+    animation-delay:.4s;
+
+}
+
+.delay-3{
+
+    animation-delay:.6s;
+
+}
+
+.delay-4{
+
+    animation-delay:.8s;
+
+}
